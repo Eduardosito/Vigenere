@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vigenere</title>
+	<meta charset="utf-8">
+
+<script src="js/Logica.js"></script>
+
+</head>
+<body>
+<div align="center">
+
+	<style>
+		body{
+			background-color: #E0E8FF;
+		}
+		form{
+			width:300px;
+			padding:16px;
+			border-radius:10px;
+			margin:auto;
+			background-color:#8AA8FF;
+		}
+
+
+
+		form input[type="button"]{
+			width:100%;
+			padding:8px 16px;
+			margin-top:32px;
+			border:1px solid #1F2D55;
+			border-radius:5px;
+			display:block;
+			color:#fff;
+			background-color:#1F2D55;
+		} 
+
+		form input[type="button"]:hover{
+			cursor:pointer;
+		}
+
+		textarea{
+			width:100%;
+			height:100px;
+			border:1px solid #f6f6f6;
+			border-radius:3px;
+			background-color:#f6f6f6;			
+			margin:8px 0;
+	
+			resize:none;
+			display:block;
+		}
+		p{
+			text-align: center;
+			font-weight:bold;
+			font-family: Calibri;
+		}
+		h1 {
+  			color: #6c2eb9;
+  			font-weight: normal;
+  			font-size: 40px;
+  			font-family: Roman;
+  			text-transform: uppercase;
+		}
+	</style>
+
+	<h1>Cifrado Vigenere</h1>	<br><br>
+	<form class="formVigenere">
+		<p>Ingresa la frase a des/encriptar    </p>
+		<textarea id="texto" rows="5"></textarea> <br><br>
+		
+		<p>Ingresa la clave de tu encriptado    </p> 
+		<input id="contra" type="text" /> <br><br>
+
+		<input id="Cifrar" onclick="CreaCadena(Cifrador(true))" type="button" value="Cifrar" /> 
+
+		<input id="desCifrar" onclick="CreaCadena(Cifrador(false))" type="button" value="Descifrar" /> 
+		<br><br>
+		<p>Resultado: </p>
+		<textarea class="textareaV" id="textoC" rows="5"></textarea>
+	</form>
+</div>
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>
